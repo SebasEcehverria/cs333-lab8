@@ -276,6 +276,8 @@ Commit: `Part 3: data in contacts.js`
 
 Question 6: what's in `names`? How many times did the function run?
 
+**The names variable contains an array of the three contact names: Tony Stark, Bruce Wayne, and Peter Parker. The map function runs three times, once for each contact in the contacts array.**
+
 12. Now use `map` to make the `<Contact />`s. In `App.jsx`, above `function App() {` (not inside it), add this function. It takes one contact and returns one `<Contact />`:
 
 ```jsx
@@ -301,6 +303,8 @@ The page should look the same, but the three `<Contact />`s are made for you now
 
 Question 7: what does the red message say?
 
+**The warning says that each child in a list should have a unique "key" prop. React needs unique keys to identify individual components when rendering or updating a list.**
+
 13. Keys. When React makes a list with `map`, it wants a `key` on each one: a value that's different for every item, so React can tell them apart when the list changes. Add an `id` to each contact in `contacts.js`, like this:
 
 ```js
@@ -324,6 +328,8 @@ Save, refresh, and the red message should be gone.
 14. Add a fourth contact at the bottom of `contacts.js` (with `id: 4`). Don't touch `App.jsx`.
 
 Question 8: did your fourth contact show up? Why didn't you have to change `App.jsx`?
+
+**Yes, the fourth contact appeared automatically. I didn't have to change App.jsx because the map function loops through every object in the contacts array and creates a Contact component for each one. Adding another object to contacts.js automatically adds another contact to the page.**
 
 Your whole `App.jsx` should look like this now (with your own console.logs if you added more):
 
