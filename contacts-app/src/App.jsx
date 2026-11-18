@@ -2,6 +2,7 @@ import "./App.css";
 import Contact from "./Contact.jsx";
 import contacts from "./contacts.js";
 
+// Creates a Contact component for each object in the contacts array.
 function createContact(contact) {
   return (
     <Contact
@@ -14,6 +15,7 @@ function createContact(contact) {
   );
 }
 
+// Displays the contacts page using the data from contacts.js.
 function App() {
   console.log(contacts);
 
@@ -22,6 +24,9 @@ function App() {
   });
 
   console.log(names);
+
+  // Shows how many contacts are currently stored.
+  console.log("Total contacts:", contacts.length);
 
   return (
     <div>

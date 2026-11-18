@@ -1,13 +1,46 @@
+body {
+  background-color: #101827;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  color: #60a5fa;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 .contact {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 12px;
-  margin: 12px auto;
-  max-width: 300px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 16px auto;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.contact:hover {
+  transform: scale(1.03);
 }
 
 .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #60a5fa;
+}
+
+.contact h2 {
+  color: #93c5fd;
+  margin: 12px 0 8px;
+}
+
+.contact p {
+  color: #cbd5e1;
+  margin: 8px 0;
 }

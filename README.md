@@ -403,6 +403,8 @@ The page should look the same. `App` uses `Contact`, and now `Contact` uses `Ava
 
 Question 9: what does that contact show for Email? Why?
 
+**Before adding conditional rendering, the contact displays "Email:" with nothing after it because the missing email prop is undefined. After using the && operator, the entire Email line disappears because React only renders it when an email value exists.**
+
 Fix it in `Contact.jsx` by changing the email line to this:
 
 ```jsx

@@ -1,3 +1,4 @@
+// Stores the contact information that our React app displays.
 const contacts = [
     {
       id: 1,
@@ -17,7 +18,6 @@ const contacts = [
       id: 3,
       name: "Peter Parker",
       phoneNumber: "541-555-0103",
-      email: "peter@example.com",
       avatar: "https://i.pravatar.cc/150?img=13",
     },
     {
