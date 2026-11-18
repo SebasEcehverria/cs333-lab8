@@ -111,6 +111,8 @@ and under the `<h1>` line, add three of them:
 
 Question 1: what do you see? Why are all three the same?
 
+**I see three identical contact cards displaying Ada Lovelace and the same phone number. They are all the same because the Contact component has hardcoded information, so every time the component is rendered, it displays the same data.**
+
 6. Props. A prop is a value you hand to a component, written like an HTML attribute. Change `Contact.jsx` to this:
 
 ```jsx
@@ -142,6 +144,8 @@ Look in the Console. (You might see each line twice. That's React double-checkin
 
 Question 2: what does `console.log(props)` print? What kind of thing is `props`?
 
+**console.log(props) prints an object containing the values passed into each Contact component, such as name and phoneNumber. Props is a JavaScript object that allows a component to receive different information from its parent component.**
+
 7. Two more props. Add `email` and `avatar` to each `<Contact />` in `App.jsx`, for example:
 
 ```jsx
@@ -170,6 +174,8 @@ and this one under the phone line:
 ```
 
 Question 3: the `Contact` component is written once. How does it show three different people?
+
+**The Contact component uses props to receive different information each time it is used. Each Contact in App.jsx passes its own name, phone number, email, and avatar, allowing the same component to display three different people without rewriting the component.**
 
 Commit: `Part 2: props`
 
