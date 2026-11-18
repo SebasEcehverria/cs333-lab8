@@ -228,6 +228,8 @@ and inside `function App() {`, above the `return`, add:
 
 Question 4: what does the Console show? What is `contacts`, and what is each thing inside it?
 
+**The Console shows an array containing three contact objects. The contacts variable is a JavaScript array, and each item inside it is an object containing a person's name, phone number, email, and avatar.**
+
 10. Now replace your three `<Contact ... />` tags in `App.jsx` with these, which read from `contacts`:
 
 ```jsx
@@ -254,6 +256,8 @@ Question 4: what does the Console show? What is `contacts`, and what is each thi
 The page should look the same. But now all your data lives in `contacts.js`.
 
 Question 5: why `0`, `1` and `2`? What would you have to do if you had 100 contacts?
+
+**JavaScript arrays start counting at 0, so contacts[0] accesses the first contact, contacts[1] accesses the second, and contacts[2] accesses the third. If I had 100 contacts, I would have to manually create 100 Contact components using this method. Using map() would make this much easier.**
 
 Commit: `Part 3: data in contacts.js`
 
